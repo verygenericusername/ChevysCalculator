@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>What is your Platform?</title>
+    </head>
+    <body>
+        <h1 class="title" style="font-size:50px;">What Platform are you using?</h1>
+        <div align="center">
+            <button class="platformButton" onclick="redirect('main.html')">PC</button>
+            <br>
+            <br>
+            <button class="platformButton" onclick="redirect('mainmobile.html')">Mobile</button>
+            <br>
+            <br>
+            <button class="platformButton" onclick="redirect('mainmobile.html')">Tablet</button>
+        </div>
+        <script>
+            function redirect(href){
+                var h = href;
+                var a = document.createElement("a");
+                a.href = h;
+                a.click();
+            }
+        </script>
+    </body>
+</html>
